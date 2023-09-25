@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="FitSuply" />
+  <meta name="description" content="Venta de productos de insumos para gimnasio" />
+  <meta name="keywords" content="barras, mancuernas, discos, cable acerado" />
+
+  <script src="https://kit.fontawesome.com/c7393ce70b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/android-chrome-512x512.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FitSuply | Inicio</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo-sin-fondo.png" alt="Logo FitSuply">
+        </a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-theme="dark" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menuHamburguesa" 
+        aria-controls="menuHamburguesa" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="menuHamburguesa">
+          <div class="contenedor-order">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="./pages/contacto.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="./pages/nosotros.html">¿Quiénes somos?</a>
+              </li>              
+            </ul>
+
+            <!-- Buscador -->            
+            <form class="d-flex mx-lg-4" role="search" >
+              <input 
+              class="form-control" 
+              type="search" 
+              placeholder="Buscar productos..." 
+              aria-label="Search">
+            </form>                      
+          </div>
+          
+
+          <!-- Icono usuario (botón para activar modal) -->
+          <button 
+          type="button" 
+          class="btn-user" 
+          data-bs-toggle="modal" 
+          data-bs-target="#modalIngresar">
+            <i class="fa-regular fa-user fa-2x"></i>
+            <p>Ingresar</p>
+          </button>
+
+          <!-- Modal -->
+          <div 
+          class="modal fade" 
+          id="modalIngresar" 
+          tabindex="-1" 
+          aria-labelledby="modalIngresarLabel" 
+          aria-hidden="true"
+          data-bs-theme="light">          
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-4 text-uppercase text-center" id="modalIngresarLabel">Ingresar</h1>
+                  <button 
+                    type="button" 
+                    class="btn-close" 
+                    data-bs-dismiss="modal" 
+                    aria-label="Close"></button>
+                </div>
+                <hr class="mx-3 my-0"/>
+
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="row-md-6">
+                      <label for="email" class="form-label fs-5">Nombre de usuario o correo<span>*</span></label>
+                      <input 
+                        type="email" 
+                        id="email" 
+                        class="form-control" 
+                        minlength="5"
+                        maxlength="254"
+                        required
+                        placeholder="usuario@ejemplo.com">
+                    </div>
+
+                    <div class="row-md-6">
+                      <label for="password" class="form-label fs-5">Contraseña<span>*</span></label>
+                      <input 
+                        type="password" 
+                        id="password" 
+                        class="form-control"
+                        minlength="7"
+                        maxlength="25"
+                        required 
+                        placeholder="Ingrese su contraseña">
+                    </div>
+
+                    <div class="form-check mt-1 fs-6 p-0">
+                      <input class="form-check-input mx-2" type="checkbox" id="inputSesion" checked>
+                      <label class="form-check-label pt-1" for="inputSesion">Mantener la sesión abierta.</label>
+                    </div>
+
+                    <div class="col-12 d-grid">
+                      <button type="submit" class="btn btn-modal text-uppercase fs-5 col-12">Ingresar</button>
+                      <a href="#" class="text-center mt-2 fs-6">¿Olvidaste tu contraseña?</a>
+                    </div>
+                  </form>
+                </div>
+                <hr class="mx-3 my-0"/>
+
+                  <div class="modal-footer d-block border-top-0">
+                    <p class="text-center">
+                      <i class="fa-regular fa-user fa-4x"></i>
+                    </p>
+                    <p class="text-center mt-3">¿Aún no tienes cuenta?
+                      <a href="#" class="text-uppercase">Crear una cuenta</a>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Ícono favoritos -->
+          <a class="position-relative mx-lg-4 btn-favs" href="./pages/404.html">
+            <i class="fa-regular fa-heart fa-2x"></i>          
+            <span class="nav-contador">0</span>
+            <p>Favoritos</p>
+          </a>
+          
+          <!-- Ícono carrito -->
+          <a class="position-relative btn-carrito" href="./pages/carrito.html">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            <span class="nav-contador">0</span>
+            <p>Carrito</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
