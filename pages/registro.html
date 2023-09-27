@@ -76,67 +76,75 @@
           tabindex="-1" 
           aria-labelledby="modalIngresarLabel" 
           aria-hidden="true"
-          data-bs-theme="dark">          
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-4 text-uppercase text-center" id="modalIngresarLabel">Ingresar</h1>
-                  <button 
-                    type="button" 
-                    class="btn-close" 
-                    data-bs-dismiss="modal" 
-                    aria-label="Close"></button>
-                </div>
-                <hr class="mx-3 my-0"/>
-
-                <div class="modal-body">
-                  <form class="row g-3">
-                    <div class="row-md-6">
-                      <label for="email" class="form-label fs-5">Nombre de usuario o correo<span>*</span></label>
-                      <input 
-                        type="email" 
-                        id="email" 
-                        class="form-control" 
-                        minlength="5"
-                        maxlength="254"
-                        required
-                        placeholder="usuario@ejemplo.com">
-                    </div>
-
-                    <div class="row-md-6">
-                      <label for="password" class="form-label fs-5">Contraseña<span>*</span></label>
-                      <input 
-                        type="password" 
-                        id="password" 
-                        class="form-control"
-                        minlength="7"
-                        maxlength="25"
-                        required 
-                        placeholder="Ingrese su contraseña">
-                    </div>
-
-                    <div class="form-check mt-1 fs-6 p-0">
-                      <input class="form-check-input mx-2" type="checkbox" id="inputSesion" checked>
-                      <label class="form-check-label pt-1" for="inputSesion">Mantener la sesión abierta.</label>
-                    </div>
-
-                    <div class="col-12 d-grid">
-                      <a href="404.html" class="btn btn-modal text-uppercase fs-5 col-12">Ingresar</a>
-                      <a href="404.html" class="text-center mt-2 fs-6">¿Olvidaste tu contraseña?</a>
-                    </div>
-                  </form>
-                </div>
-                <hr class="mx-3 my-0"/>
-
-                  <div class="modal-footer d-block border-top-0">
-                    <p class="text-center">
-                      <i class="fa-regular fa-user fa-4x"></i>
-                    </p>
-                    <p class="text-center mt-3">¿Aún no tienes cuenta?
-                      <a href="registro.html" class="text-uppercase">Crear una cuenta</a>
-                    </p>
+          data-bs-theme="dark">
+            <div class="modal-dialog modal-xl">
+              <div class="d-flex border border-1">
+                <img class="img-fluid" src="../img/login-image.jpg" alt="Persona usando su celular">
+                <div class="modal-content px-3">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4 text-uppercase text-center" id="modalIngresarLabel">Ingresar</h1>
+                    <button 
+                      type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close"></button>
                   </div>
+                  <hr class="mx-3 my-0"/>
+  
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="row-md-6">
+                        <label for="email" class="form-label fs-5">Nombre de usuario o correo<span>*</span></label>
+                        <input 
+                          type="email" 
+                          id="email" 
+                          class="form-control" 
+                          minlength="5"
+                          maxlength="254"
+                          required
+                          placeholder="usuario@ejemplo.com">
+                      </div>
+  
+                      <div class="row-md-6">
+                        <label for="password" class="form-label fs-5">Contraseña<span>*</span></label>
+                        <input 
+                          type="password" 
+                          id="password" 
+                          class="form-control"
+                          minlength="7"
+                          maxlength="25"
+                          required 
+                          placeholder="Ingrese su contraseña">
+                      </div>
+  
+                      <div class="form-check mt-1 fs-6 p-0">
+                        <input class="form-check-input mx-2" type="checkbox" id="inputSesion" checked>
+                        <label class="form-check-label pt-1" for="inputSesion">Mantener la sesión abierta.</label>
+                      </div>
+  
+                      <div class="col-12 d-grid">
+                        <button type="submit" class="btn btn-modal text-uppercase fs-5 col-12">Ingresar</button>
+                        <a href="404.html" class="text-center mt-2 fs-6">¿Olvidaste tu contraseña?</a>
+                      </div>
+                    </form>
+                    <p class="text-center mt-5">O continúa con</p>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 my-3"><i class="fa-brands fa-facebook-f me-3"></i> Facebook</a>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12"><i class="fa-brands fa-google fa-1x me-3"></i> Google</a>
+                    
+                  </div>
+                  <hr class="mx-3 my-0"/>
+  
+                    <div class="modal-footer d-block border-top-0">
+                      <p class="text-center">
+                        <i class="fa-regular fa-user fa-4x"></i>
+                      </p>
+                      <p class="text-center mt-3">¿Aún no tienes cuenta?
+                        <a href="registro.html" class="text-uppercase">Crear una cuenta</a>
+                      </p>
+                    </div>
+                </div>
               </div>
+              
             </div>
           </div>
 
@@ -160,10 +168,103 @@
   </header>
 
   <main>
-    
+    <h1>Registro</h1>
   </main>
 
+  <footer class="text-light py-3">
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-md-12 col-lg-3 mt-3 text-center text-lg-start">
+          <img src="../img/logo-sin-fondo.png" alt="Logo FitSuply" class="img-fluid logo-footer">
+        </div>
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Información</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled">
+            <li              
+              ><a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Política de privacidad</a>
+            </li>
+            
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Términos y condiciones</a>
+            </li>
+            
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Políticas de devolución</a>
+            </li>              
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Mapa</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled">
+            <li              
+              ><a href="nosotros.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Nosotros</a>
+            </li>
+            
+            <li class="my-3">
+              <a href="contacto.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Contacto</a>
+            </li>
+            
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Productos destacados</a>
+            </li>              
+          </ul>
+        </div>
 
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Seguinos en las redes</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled d-flex justify-content-between justify-content-lg-start">
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-instagram fs-2"></i>
+              </a>
+            </li>
+
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-facebook fs-2"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-x-twitter fs-2"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-regular fa-envelope fs-2"></i>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+        <hr class="my-4" />
+        <div class="container">
+          <article class="row">
+            <div class="col-md-6 col-lg-6 text-center">
+              <h5 class="mb-4">Formas de pago</h5>
+              <img
+              src="../img/formasdepago01-footer.png"
+              alt="formas de pago"
+              class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6 col-lg-6 d-flex align-items-center justify-content-center mt-3">
+              <p>&copy;Todos los derechos reservados</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
