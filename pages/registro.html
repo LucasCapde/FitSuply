@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Ortega Antonella, Alani Camila, Capdevila Lucas, Facio Mauro" />
+  <meta name="author" content="Ortega Antonella, Alani Camila, Capdevila Lucas" />
   <meta name="description" content="Venta de insumos para gimnasio" />
   <meta name="keywords" content="gym, yoga, barras, mancuernas, discos, colchonetas" />
 
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
           <img src="../img/logo-sin-fondo.png" alt="Logo FitSuply">
@@ -92,7 +92,9 @@
                   <hr class="mx-3 my-0"/>
   
                   <div class="modal-body">
-                    <form class="row g-3">
+
+                    
+                    <form class="row g-3" method="get">
                       <div class="row-md-6">
                         <label for="email" class="form-label fs-5">Nombre de usuario o correo<span>*</span></label>
                         <input 
@@ -128,8 +130,8 @@
                       </div>
                     </form>
                     <p class="text-center mt-5">O continúa con</p>
-                    <a href="404.html" class="btn btn-modal fs-5 col-12 my-3"><i class="fa-brands fa-facebook-f me-3"></i> Facebook</a>
-                    <a href="404.html" class="btn btn-modal fs-5 col-12"><i class="fa-brands fa-google fa-1x me-3"></i> Google</a>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 my-3 btn-facebook"><i class="fa-brands fa-facebook-f me-3"></i> Facebook</a>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 btn-google"><i class="fa-brands fa-google fa-1x me-3"></i> Google</a>
                     
                   </div>
                   <hr class="mx-3 my-0"/>
@@ -167,8 +169,109 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Registro</h1>
+  <main class="main-registro">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card col-10 col-md-8 m-3">
+          <div class="card-body px-0">
+            <h2 class="card-title text-center text-uppercase">Registrarme</h2>            
+            
+            <form method="get">
+              <label class="mt-3" for="nombre">Nombre y apellido<span>*</span></label>
+              <input 
+                type="text"
+                id="nombre"
+                class="form-control"
+                minlength="5"
+                maxlength="50"
+                required
+                placeholder="Ej: Lionel Messi"
+                >
+              
+              <label class="mt-3" for="nombre-usuario">Nombre de usuario<span>*</span></label>
+              <input 
+                type="text"
+                id="nombre-usuario"
+                class="form-control"
+                minlength="8"
+                maxlength="20"
+                required
+                placeholder="Tu nombre de usuario">
+              
+              <label class="mt-3" for="correo">Correo electrónico<span>*</span></label>
+              <input 
+                type="email"
+                id="correo"
+                class="form-control"
+                minlength="5"
+                maxlength="254"
+                required
+                placeholder="usuario@ejemplo.com">
+              
+              <label class="mt-3" for="telefono">Teléfono (opcional)<span>*</span></label>
+              <input 
+                type="tel"
+                id="telefono"
+                class="form-control"
+                pattern="[0-9]{10}"
+                min="0"
+                max="10"
+                placeholder="Tu número de teléfono (sin 0 ni 15)"
+                >
+              
+              <label class="mt-3" for="domicilio">Domicilio<span>*</span></label>
+              <input 
+                type="text"
+                id="domicilio"
+                class="form-control"
+                minlength="5"
+                maxlength="30"
+                required
+                placeholder="Dirección de tu domicilio">
+              
+              <label class="mt-3" for="codigo-postal">Código Postal<span>*</span></label>
+              <input 
+                type="text"
+                id="codigo-postal"
+                class="form-control"
+                minlength="4"
+                maxlength="8"
+                required
+                placeholder="Código postal de tu ciudad">
+              
+              <label class="mt-3" for="contraseña">Contraseña<span>*</span></label>
+              <input 
+                type="password"
+                id="contraseña"
+                class="form-control"
+                minlength="8"
+                maxlength="20"
+                required
+                placeholder="Mínimo de 8 y máximo de 20 caracteres">
+              
+              <label class="mt-3" for="contraseña-2">Repite tu contraseña<span>*</span></label>
+              <input 
+                type="password"
+                id="contraseña-2"
+                class="form-control"
+                minlength="8"
+                maxlength="20"
+                required
+                placeholder="Repetir contraseña">
+
+              <button type="submit" class="btn btn-primary text-uppercase border-0 my-3 col-12 fs-5 ">Confirmar</button>
+            </form>
+            
+            <p class="text-center m-0 parrafo-opciones">O regístrate con</p>
+            <a href="404.html" class="btn btn-modal fs-5 col-12 my-3 btn-facebook"><i class="fa-brands fa-facebook-f me-3"></i> Facebook</a>
+            <a href="404.html" class="btn btn-modal fs-5 col-12 btn-google"><i class="fa-brands fa-google fa-1x me-3"></i> Google</a>
+            <p class="text-center mb-0 mt-4">¿Ya tienes cuenta? <span class="text-uppercase registro-modal" data-bs-toggle="modal" data-bs-target="#modalIngresar">Iniciar sesión</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </main>
 
   <footer class="text-light py-3">

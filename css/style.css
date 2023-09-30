@@ -11,8 +11,6 @@ body{
   background: #212121;
   color: #fafafa;
   font-family: 'Roboto', sans-serif;
-  /* Padding para que el navbar fijo no tape contenido debajo */
-  padding-top: 10%;
 
   /* Bajar footer */
   display: flex;
@@ -24,10 +22,7 @@ main{
   flex-grow: 1;
 }
 
-/* Ajusta la posición del modal que fue cambiada en el .fixed-top en el <nav> (caso contrario, falla) */
-.navbar{
-  z-index: 1051;
-}
+
 
 /* Colores de nav y footer */
 nav,
@@ -143,7 +138,7 @@ i{
   opacity: 0.5;
 }
 
-.modal-body span{
+form span{
   color: red;
 }
 
@@ -188,20 +183,24 @@ form button.btn:hover{
 }
 /* Cambia colores de botones de Facebook y Google */
 
-.modal-body a:nth-child(3){
+.btn-facebook{
   background: #3b5998;
+  color: #fafafa;
 }
 
-.modal-body a:nth-child(3):hover{
+.btn-facebook:hover{
   background: #476bb8;
+  color: #fafafa;
 }
 
-.modal-body a:nth-child(4){
+.btn-google{
   background: #db4437;
+  color: #fafafa;
 }
 
-.modal-body a:nth-child(4):hover{
+.btn-google:hover{
   background: hsl(5, 69%, 58%);
+  color: #fafafa;
 }
 
 .modal-footer i{
@@ -233,10 +232,6 @@ form button.btn:hover{
 
 /** ---------- Medidas responsive ---------- */
 @media all and (max-width: 768px){
-  body{
-    padding-top: 15%;
-  }
-
   .navbar-brand{
     width: 25%;
   }
@@ -430,5 +425,52 @@ form button.btn:hover{
 @media all and (max-width: 768px){
   .logo-footer{
     width: 40%;
+  }
+}
+
+
+
+
+
+/*! --------------- REGISTRO --------------- */
+.main-registro{
+  background: linear-gradient(rgba(0, 0, 0, .75) , rgba(0, 0, 0, .75) ), url(../img/fondo-registro.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.parrafo-opciones{
+  position: relative;
+}
+
+.parrafo-opciones::before{
+  content: "";
+  border: .1px solid rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 40%;
+  top: 10px;
+  right: 0px;
+}
+
+.parrafo-opciones::after{
+  content: "";
+  border: .1px solid rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 40%;
+  top: 10px;
+  left: 0px;
+}
+
+.registro-modal{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/** ----- MEDIDAS RESPONSIVE ----- */
+
+@media all and (max-width: 768px){
+  .main-registro .card-body{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
