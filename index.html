@@ -168,7 +168,514 @@
   </header>
 
   <main>
-    <h1>Inicio</h1>
+    <!-- CAROUSEL DE IMAGENES -->
+    <div id="CarouselGym" class="carousel slide mt-4">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#CarouselGym"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#CarouselGym"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#CarouselGym"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#CarouselGym"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/SLIDE_1.gif"
+            class="d-block w-100 imgProductosCarousel"
+            alt="3 cuotas sin interes"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/SLIDE_2.gif"
+            class="d-block w-100 imgProductosCarousel"
+            alt="productos de calidad"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/SLIDE_3.gif"
+            class="d-block w-100 imgProductosCarousel"
+            alt="envios gratis"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/SLIDE_4.gif"
+            class="d-block w-100 imgProductosCarousel"
+            alt="registrate y obtene beneficios"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#CarouselGym"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#CarouselGym"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="my-4 tittle-categoria container">
+      <h1>Nuestras Categorias</h1>
+    </section>
+
+    <!-- ----------------CATEGORIAS------------- -->
+    <section class="container">
+      <section class="row">
+        <div
+          class="col-lg-4 col-md-4 col-sm-12 image-categorias mt-4 hvr-grow-shadow"
+        >
+          <a href="./pages/boxeo.html">
+            <img src="./img/Boxeo.jpg" alt="Boxeo" class="img-fluid"
+          /></a>
+          <h2 class="title">BOXEO</h2>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-4 col-sm-12 image-categorias mt-4 hvr-grow-shadow">
+          <a href="./pages/barra.html">
+            <img
+              src="./img/yoga_(2).jpg"
+              alt="Yoga Y Pilates"
+              class="img-fluid"/>
+            </a>
+          <h2 class="title">YOGA Y PILATES</h2>
+        </div>
+
+        <div
+          class="col-lg-4 col-md-4 col-sm-12 image-categorias mt-4 hvr-grow-shadow"
+        >
+          <a href="./pages/barra-dorsal.html">
+            <img
+              src="./img/macuernas.jpg"
+              alt="Mancuernas,Barras y discos"
+              class="img-fluid"
+          /></a>
+          <h2 class="title">MANCUERNAS, BARRAS Y DISCOS</h2>
+        </div>
+
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 mt-4 image-categorias hvr-grow-shadow"
+        >
+          <a href="./pages/agarre.html">
+            <img
+              src="./img/Poleas.jpg"
+              alt="Poleas y Repuestos"
+              class="img-fluid"
+          /></a>
+          <h2 class="title">POLEAS Y REPUESTOS</h2>
+        </div>
+
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 ing image-categorias mt-4 hvr-grow-shadow"
+        >
+          <a href="/pages/cross.html">
+            <img src="./img/Crofit.jpg" alt="CrossTraining" class="img-fluid"
+          /></a>
+          <h2 class="title">CROSS TRAINING</h2>
+        </div>
+      </section>
+    </section>
+
+    <!-- ----------------SECCION 1------------- -->
+
+    <article class="container mt-5 bg-logos">
+      <section class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <article class="text-center text-light letra">
+            <i
+              class="fa-solid fa-truck-fast tamaño-logos mb-4"
+              style="color: #ec3232"
+            ></i>
+            <h3>Envio Rapido y Seguro</h3>
+            <p>Todos tus paquetes estaran protegidos y asegurados</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <article class="text-center text-light letra">
+            <i
+              class="fa-solid fa-credit-card tamaño-logos mb-4"
+              style="color: #ec3232"
+            ></i>
+            <h3>Metodos de pago</h3>
+            <p>
+              Paga por transferencia,con tarjeta de debito, credito o efectivo
+            </p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <article class="text-center text-light letra">
+            <i
+              class="fa-solid fa-percent tamaño-logos mb-4"
+              style="color: #ec3232"
+            ></i>
+            <h3>Descuento</h3>
+            <p>Comprando en el local 15% de descuento en efectivo</p>
+          </article>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <article class="text-center text-light letra">
+            <i
+              class="fa-regular fa-clock tamaño-logos mb-4"
+              style="color: #ec3232"
+            ></i>
+            <h3>Atencion Personalizada</h3>
+            <p>Brindamos asesoria antes y despues de la compra</p>
+          </article>
+        </div>
+      </section>
+    </article>
+
+    <!--.----------- Seccion 2--------- -->
+    
+
+    <section class="contenedor-seccion-2">
+      <img src="./img/seccion-2.jpg" alt="imagen con pesas" />
+      <h2 >¡Haz de tu Hogar tu Templo del Fitness!</h2>
+      <p class="mb-4 letra">
+        Transforma tu espacio y revoluciona tu rutina de entrenamiento con <b>FitSuply</b>. Descubre cómo nuestros insumos pueden llevarte más cerca de tus metas fitness. ¡Compra ahora y sé el arquitecto de tu propio éxito fitness!
+      </p>
+    </section>
+
+    <!-- ----------------COMENTARIO------------- -->
+    <section class="container">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="comments-grid">
+            <div class="comment">
+              <div class="rating"></div>
+              <p>
+                Excelente todo!! Me llegó antes de lo que esperaba.La atención
+                impecable por Whatsapp para guiarme para hacer la compra.
+                Super hiper recomendable. Con respecto a los precios muy
+                buenos es más me atrevo a decir lo mejor en el mercado.
+              </p>
+              <p class="author">Autor: Ortega Antonella</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="comments-grid">
+            <div class="comment">
+              <div class="rating"></div>
+              <p>
+                Excelente. Entrega inmediata! Yo siempre elijo la opción de
+                retirar porque queda cerquita de mi trabajo. Así que puedo
+                decir que el trato y la atención son impecables! Super amables
+                y respetuosos. Los productos de primera calidad!!! Los
+                recomiendo
+              </p>
+              <p class="author">Autor: Lucas Capdevila</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="comments-grid">
+            <div class="comment">
+              <div class="rating"></div>
+              <p>
+                Excelente atencion, rapidez en la entrega, responden los
+                whatsapp rapidamente y dan seguridad ante cualquier duda
+                Productos de muy buena calidad.
+              </p>
+              <p class="author">Autor: Camila Alani</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-4 tittle-categoria container">
+      <h1>Nuestros Productos Destacados</h1>
+    </section>
+
+    <!-- ----------------PRODUCTOS DESTACADOS------------- -->
+
+    <section class="container my-4">
+      <article class="row">
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/barra-dorsal.webp"
+              class="card-img-top"
+              alt="barra dorsal"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Barra dorsalera polea con estribos recta
+              </h5>
+              <p class="card-text text-center card-precio">$39,999.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/barra-dorsal.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/barra-w.webp"
+              class="card-img-top"
+              alt="barra w"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Barra W con rosca cromada maciza
+              </h5>
+              <p class="card-text text-center card-precio">$14,900.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/barra.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/agarre-u.webp"
+              class="card-img-top"
+              alt="agarre u"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Agarre «U» para landmine 30/50mm reforzado con ajuste
+              </h5>
+              <p class="card-text text-center card-precio">$15,687.59</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/agarre.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/disco75.webp"
+              class="card-img-top"
+              alt="disco 7,5 kg"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Disco fundicion olimpico c/manija x 7,5kg
+              </h5>
+              <p class="card-text text-center card-precio">$2,831.39</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/disco.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/guante-negro.webp"
+              class="card-img-top"
+              alt="guante negro adulto"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Guante bronx Adulto boxeo con abrojo
+              </h5>
+              <p class="card-text text-center card-precio">$14,629.59</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/barra-dorsal.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/ruedas.webp"
+              class="card-img-top"
+              alt="doble rueda abdominal y alfombra"
+            />
+            <div class="card-body ">
+              <h5 class="card-title">Doble Rueda Abdominal con Alfombra</h5>
+              <p class="card-text text-center card-precio">$3,700.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/barra.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/cajon-crofit.webp"
+              class="card-img-top"
+              alt="cajon crossfit"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Cajon de salto crossfit MDF 30 x 40 x 50 cm</h5>
+              <p class="card-text text-center card-precio">$340.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/agarre.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/colchoneta.webp"
+              class="card-img-top"
+              alt="colchoneta"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Colchoneta alta resistencia c/cierre -100 x 39 x 3cm doble bagun
+              </h5>
+              <p class="card-text text-center card-precio">$8,990.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/disco.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/mancuernas.webp"
+              class="card-img-top"
+              alt="mancuernas 1kg"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">Mancuerna PVC 1kg</h5>
+              <p class="card-text text-center card-precio">$1,170.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/barra-dorsal.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/pelota-yoga.webp"
+              class="card-img-top"
+              alt="pelota de esferodinamia"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Pelota de esferodinamia reforzada 55 cm AZUL HASTA 210 KG
+              </h5>
+              <p class="card-text text-center card-precio">$20,000.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/barra.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/barra.webp"
+              class="card-img-top"
+              alt="body completo"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Equipo Body Completo 17 KG (Rojo)
+              </h5>
+              <p class="card-text text-center card-precio">$24,900.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/agarre.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-4">
+          <div class="card h-100">
+            <img
+              src="./img/productos/set-de-5-bandas-elasticas.webp"
+              class="card-img-top"
+              alt="set bandas y manija"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Set 5 Bandas Elasticas Con Manija Gamelan
+              </h5>
+              <p class="card-text text-center card-precio">$5,740.00</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./pages/disco.html" class="btn hvr-radial-out w-100"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>        
+      </article>
+    </section>
   </main>
 
   <footer class="text-light py-3">

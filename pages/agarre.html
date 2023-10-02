@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ortega Antonella, Alani Camila, Capdevila Lucas" />
+  <meta name="description" content="Venta de insumos para gimnasio" />
+  <meta name="keywords" content="gym, yoga, barras, mancuernas, discos, colchonetas" />
+
+  <script src="https://kit.fontawesome.com/c7393ce70b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/android-chrome-512x512.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>FitSuply | Producto</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-sin-fondo.png" alt="Logo FitSuply">
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-theme="dark"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuHamburguesa"
+        aria-controls="menuHamburguesa"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuHamburguesa">
+          <div class="contenedor-order">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="contacto.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="nosotros.html">¿Quiénes somos?</a>
+              </li>
+            </ul>
+
+            <!-- Buscador -->
+            <form class="d-flex mx-lg-4" role="search" >
+              <input
+              class="form-control"
+              type="search"
+              placeholder="Buscar productos..."
+              aria-label="Search">
+            </form>
+          </div>
+
+
+          <!-- Icono usuario (botón para activar modal) -->
+          <button
+          type="button"
+          class="btn-user"
+          data-bs-toggle="modal"
+          data-bs-target="#modalIngresar">
+            <i class="fa-regular fa-user fa-2x"></i>
+            <p>Ingresar</p>
+          </button>
+
+          <!-- Modal -->
+          <div
+          class="modal fade"
+          id="modalIngresar"
+          tabindex="-1"
+          aria-labelledby="modalIngresarLabel"
+          aria-hidden="true"
+          data-bs-theme="dark">
+            <div class="modal-dialog modal-xl">
+              <div class="d-flex border border-1">
+                <img class="img-fluid" src="../img/login-image.jpg" alt="Persona usando su celular">
+                <div class="modal-content px-3">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4 text-uppercase text-center" id="modalIngresarLabel">Ingresar</h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <hr class="mx-3 my-0"/>
+
+                  <div class="modal-body">
+
+
+                    <form class="row g-3" method="post">
+                      <div class="row-md-6">
+                        <label for="email" class="form-label fs-5">Nombre de usuario o correo<span>*</span></label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          minlength="5"
+                          maxlength="254"
+                          required
+                          placeholder="usuario@ejemplo.com">
+                      </div>
+
+                      <div class="row-md-6">
+                        <label for="password" class="form-label fs-5">Contraseña<span>*</span></label>
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          minlength="7"
+                          maxlength="25"
+                          required
+                          placeholder="Ingrese su contraseña">
+                      </div>
+
+                      <div class="form-check mt-1 fs-6 p-0">
+                        <input class="form-check-input mx-2" type="checkbox" id="inputSesion" checked>
+                        <label class="form-check-label pt-1" for="inputSesion">Mantener la sesión abierta.</label>
+                      </div>
+
+                      <div class="col-12 d-grid">
+                        <button type="submit" class="btn btn-modal text-uppercase fs-5 col-12">Ingresar</button>
+                        <a href="404.html" class="text-center mt-2 fs-6">¿Olvidaste tu contraseña?</a>
+                      </div>
+                    </form>
+                    <p class="text-center mt-5">O continúa con</p>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 my-3 btn-facebook"><i class="fa-brands fa-facebook-f me-3"></i> Facebook</a>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 btn-google"><i class="fa-brands fa-google fa-1x me-3"></i> Google</a>
+
+                  </div>
+                  <hr class="mx-3 my-0"/>
+
+                    <div class="modal-footer d-block border-top-0">
+                      <p class="text-center">
+                        <i class="fa-regular fa-user fa-4x"></i>
+                      </p>
+                      <p class="text-center mt-3">¿Aún no tienes cuenta?
+                        <a href="registro.html" class="text-uppercase">Crear una cuenta</a>
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Ícono favoritos -->
+          <a class="position-relative mx-lg-4 btn-favs " href="404.html">
+            <i class="fa-regular fa-heart fa-2x"></i>
+            <span class="nav-contador">0</span>
+            <p>Favoritos</p>
+          </a>
+
+          <!-- Ícono carrito -->
+          <a class="position-relative btn-carrito" href="carrito.html">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            <span class="nav-contador">0</span>
+            <p>Carrito</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-2">
+      <div class="row px-2">
+
+        <!-- IMÁGENES DEL PRODUCTO -->
+
+        <section class="col-12 col-md-6 col-lg-8 my-2 align-self-md-center">
+          <div id="carouselProducto" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/productos/agarre-u.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/productos/agarre-u-1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/productos/agarre-u-2.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+
+        <!-- TÍTULO DEL PRODUCTO -->
+        
+        <section class="col-12 col-md-6 col-lg-4 p-3 mt-2 border border-light border-opacity-10 rounded">
+          <p class="text-secondary">Nuevo | 500 vendidos</p>
+          <h2 class="text-center text-lg-start display-1 fs-1">Agarre «U» para landmine 30/50mm reforzado con ajuste</h2>
+          <p class="text-center text-lg-start card-precio fs-2">$ 15,687.59</p>
+          <a href="./404.html" class="link-underline link-underline-opacity-0">Ver medios de pago</a>
+          <p class="mb-0 mt-4 text-success fw-bold">Devolución gratuita</p>
+          <p class="text-secondary">Los primeros 15 días desde que lo recibís</p>
+          <div class="text-center p-3 border border-light border-opacity-10 rounded">
+            <p class="m-0">Agrega productos por <b>$50.000</b> al carrito para tener <span class="text-uppercase">envío gratis a tu domicilio</span></p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <select class="form-select my-3 w-50" aria-label="Default select example">
+              <option selected>Cantidad</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <div class="p-1 text-success text-center bg-success bg-opacity-25">
+              <p class="m-0"><i class="fa-regular fa-circle-check text-success"></i> 10 disponibles</p>
+            </div>
+          </div>
+          
+          <a href="./carrito.html" class="btn btn-primary my-3 w-100">Comprar ahora</a>
+          <button type="submit" class="btn btn-success w-100">Añadir al Carrito</button>
+        </section>        
+        
+        
+        <!-- DESCRIPCIÓN DEL PRODUCTO -->
+        
+        <section class="col-12 p-3 mt-3 border border-light border-opacity-10 rounded">
+          <h3 class="text-uppercase">Descripción</h3>
+          <p class="text-uppercase">Agarre U para barra olimpica y barra de 30 mm.</p>
+
+          <h4 class="text-uppercase">Especificaciones</h4>
+          <ul>
+            <li>Con perilla de ajuste para mayor seguridad.</li>
+            <li>Confeccionado en acero.</li>
+            <li>Reforzado en el centro.</li>
+            <li>Puños de goma.</li>
+            <li>Confeccionado en acero de 1.6 mm.</li>
+            <li>Largo: 54 cm.</li>
+            <li>Ancho externo: 42 cm.</li>
+            <li>Ancho interno: 38 cm.</li>
+            <li>Diametro caño 53 mm parar barra 50 mm.</li>
+            <li>Marca: Expert.</li>
+          </ul>
+        </section>
+        
+        
+        <!-- COMENTARIOS DE USUARIOS -->
+        
+        <section class="col-12 p-3 mt-3 border border-light border-opacity-10 rounded">
+          <h3 class="text-uppercase">Opiniones del producto</h3>
+          <div class="row justify-content-lg-center">
+            <div class="col-6 col-lg-4">
+              <p class="fs-1 m-0 text-primary">4.8</p>
+              <div class="d-flex my-3">
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+              </div>
+              <p class="m-0 text-secondary">28 calificaciones</p>
+            </div>
+            
+            <div class="col-6 col-lg-4">
+              <div class="progress mb-3 w-75" role="progressbar" aria-label="Basic example" aria-valuenow="1000" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+              <div class="progress mb-3 w-75" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 95%"></div>
+              </div>
+              <div class="progress mb-3 w-75" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 40%"></div>
+              </div>
+              <div class="progress mb-3 w-75" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 10%"></div>
+              </div>
+              <div class="progress w-75" role="progressbar" aria-label="Basic example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 5%"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-3">
+
+          <div class="col">
+            <h4>juanperez25</h4>
+            <div class="d-flex my-3">
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary me-auto"></i>
+              <p class="fecha-comentario">21 sep. 2023</p>
+            </div>
+            <p>Este producto es justo lo que esperaba, excelente !</p>
+            <button class="btn border rounded-circle p-1"><i class="fa-regular fa-thumbs-up"></i></button>
+            <span class="me-2">23</span>
+            <button class="btn border rounded-circle p-1"><i class="fa-regular fa-thumbs-down"></i></button>
+          </div>
+          
+          <hr class="my-3">
+          
+          <div class="col">
+            <h4>luisdiaz17</h4>
+            <div class="d-flex my-3">
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary me-auto"></i>
+              <p class="fecha-comentario">21 sep. 2023</p>
+            </div>
+            <p>Muy bueno !</p>
+            <button class="btn border rounded-circle p-1"><i class="fa-regular fa-thumbs-up"></i></button>
+            <span class="me-2">10</span>
+            <button class="btn border rounded-circle p-1"><i class="fa-regular fa-thumbs-down"></i></button>
+          </div>
+          
+          <hr class="my-3">
+          
+          <div class="col">
+            <h4>carlosgomez64</h4>
+            <div class="d-flex my-3">
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary"></i>
+              <i class="fa-solid fa-star text-primary me-auto"></i>
+              <p class="fecha-comentario">21 sep. 2023</p>
+            </div>
+            <p>Quedé muy conforme con este producto.</p>
+            <button class="btn border rounded-circle p-1"><i class="fa-regular fa-thumbs-up"></i></button>
+            <span class="me-2">14</span>
+            <button class="btn border rounded-circle p-1"><i class="fa-regular fa-thumbs-down"></i></button>
+          </div>
+        </section>
+
+
+        <!-- PRODUCTOS RECOMENDADOS -->
+
+        <section class="col-12 p-3 my-3 border border-light border-opacity-10 rounded">
+          <h3 class="text-uppercase text-center">Nuestras recomendaciones</h3>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 my-4">
+              <div class="card h-100">
+                <img
+                  src="../img/productos/barra-w.webp"
+                  class="card-img-top"
+                  alt="barra w"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    Barra W con rosca cromada maciza
+                  </h5>
+                  <p class="card-text text-center card-precio">$14,900.00</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="./pages/producto.html" class="btn hvr-radial-out w-100"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-12 col-md-6 col-lg-3 my-4">
+              <div class="card h-100">
+                <img
+                  src="../img/productos/barra-w.webp"
+                  class="card-img-top"
+                  alt="barra w"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    Barra W con rosca cromada maciza
+                  </h5>
+                  <p class="card-text text-center card-precio">$14,900.00</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="./pages/producto.html" class="btn hvr-radial-out w-100"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-12 col-md-6 col-lg-3 my-4">
+              <div class="card h-100">
+                <img
+                  src="../img/productos/barra-w.webp"
+                  class="card-img-top"
+                  alt="barra w"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    Barra W con rosca cromada maciza
+                  </h5>
+                  <p class="card-text text-center card-precio">$14,900.00</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="./pages/producto.html" class="btn hvr-radial-out w-100"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-12 col-md-6 col-lg-3 my-4">
+              <div class="card h-100">
+                <img
+                  src="../img/productos/barra-w.webp"
+                  class="card-img-top"
+                  alt="barra w"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    Barra W con rosca cromada maciza
+                  </h5>
+                  <p class="card-text text-center card-precio">$14,900.00</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="./pages/producto.html" class="btn hvr-radial-out w-100"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-light py-3">
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-md-12 col-lg-3 mt-3 text-center text-lg-start">
+          <img src="../img/logo-sin-fondo.png" alt="Logo FitSuply" class="img-fluid logo-footer">
+        </div>
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Información</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled">
+            <li
+              ><a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Política de privacidad</a>
+            </li>
+
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Términos y condiciones</a>
+            </li>
+
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Políticas de devolución</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Mapa</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled">
+            <li
+              ><a href="nosotros.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Nosotros</a>
+            </li>
+
+            <li class="my-3">
+              <a href="contacto.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Contacto</a>
+            </li>
+
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Productos destacados</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Seguinos en las redes</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled d-flex justify-content-between justify-content-lg-start">
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-instagram fs-2"></i>
+              </a>
+            </li>
+
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-facebook fs-2"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-x-twitter fs-2"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-regular fa-envelope fs-2"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <hr class="my-4" />
+        <div class="container">
+          <article class="row">
+            <div class="col-md-6 col-lg-6 text-center">
+              <h5 class="mb-4">Formas de pago</h5>
+              <img
+              src="../img/formasdepago01-footer.png"
+              alt="formas de pago"
+              class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6 col-lg-6 d-flex align-items-center justify-content-center mt-3">
+              <p>&copy;Todos los derechos reservados</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

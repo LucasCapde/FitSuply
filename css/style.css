@@ -318,6 +318,351 @@ form button.btn:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!--------------- PAGINA PRINCIPAL ---------------*/
+.imgProductosCarousel{
+  height: 450px;
+  object-fit: cover;
+  /* objet-fit recorta las imagenes pero muestra bien */
+}
+
+.tittle-categoria{
+  background: rgb(255,143,143);
+  background: radial-gradient(circle, rgba(255,143,143,1) 12%, rgba(173,46,46,1) 82%);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: rgb(13, 12, 12);
+  font-family: 'Martian Mono', monospace;
+}
+
+
+/* CATEGORIAS DE LA PAGINA PRINCIPAL */
+
+.image-categorias {
+  position:relative;
+  
+}
+.image-categorias img {
+  transition: opacity 0.4s;
+  width: 100%;
+
+}
+.image-categorias:hover img {
+  opacity: 0.4;
+}
+.title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+/* -------------CATEGORIAS HOVER--------- */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px #212121;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(255, 247, 247, 0.853);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* ------------Botones de comprar---------- */
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: rgba(221, 4, 4, 0.855);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #bd232341;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: rgb(6, 6, 6);
+  text-decoration:underline;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+
+/* Card de lso productos */
+
+.card-precio{
+  color: #f91e1e;
+  font-family: 'Martian Mono', monospace;
+  font-size: 20px;
+  margin-top: 15px;  
+}
+
+/* --------------------Hover de las card----------------- */
+
+.card {
+position: relative;
+overflow: hidden;
+}
+
+.card img {
+width: 100%;
+height: auto;
+transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+transform: scale(1.1); /* Puedes ajustar el valor según tu preferencia */
+}
+
+/* seccion con los logos */
+
+.tamaño-logos{
+  font-size: 70px ;
+}
+
+.bg-logos{
+  padding-top: 25px;
+  background-color: #302f2fb5;
+}
+
+
+
+/* Estilos para las estrellas de valoración */
+.rating {
+font-size: 24px;
+display: inline-block;
+}
+
+.rating::before {
+content: "★★★★★"; /* Representa las 5 estrellas */
+letter-spacing: 3px;
+background: linear-gradient(90deg, #f7d500 0%, #f7d500 calc(20% - 0.5px), #f7d500 calc(20% - 0.5px),#f7d500 100%); /* Gradiente de color para las estrellas no seleccionadas */
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
+/* Estilos para los comentarios */
+.comment {
+padding: 10px;
+margin: 10px 0;
+text-align: center;
+}
+
+.comment p {
+margin: 0;
+}
+
+.author {
+font-style: italic;
+color: #888;
+}
+
+.contenedor-seccion-2 {
+padding-top: 20px;
+position: relative;
+text-align: center;
+height: 700px;
+}
+
+.contenedor-seccion-2 img {
+width: 100%;
+height: 100%;
+opacity: 0.5;
+}
+
+.contenedor-seccion-2 h2 {
+position: absolute;
+top: 30%; /* Centra verticalmente en el contenedor */
+left: 50%; /* Centra horizontalmente en el contenedor */
+transform: translate(-50%, -50%); /* Centra completamente en el contenedor */
+color: rgb(255, 255, 255); /* Color del texto */
+background-color: #f91e1eb1; /* Fondo semitransparente */
+padding: 10px 20px; /* Espaciado interno para el título */
+font-family: 'Martian Mono', monospace;
+
+}
+
+/* Estilos para el párrafo */
+.contenedor-seccion-2 p {
+position: absolute;
+top: 50%; /* Ajusta la posición vertical del párrafo */
+left: 50%; /* Centra horizontalmente en el contenedor */
+transform: translateX(-50%);
+color: white; /* Color del texto */
+font-size: 35px;
+}
+
+@media (max-width: 1024px) {
+
+  .contenedor-seccion-2{
+    height: auto;
+  }
+  .contenedor-seccion-2 h2,.contenedor-seccion-2 p{
+    width:100%; /* Ajusta el ancho del título y el párrafo para pantallas pequeñas */
+      font-size:25px; /* Cambia el tamaño del texto para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-seccion-2 {
+    display: none; /* Oculta completamente la sección en dispositivos pequeños */
+  }
+  
+  .imgProductosCarousel{
+      height: 150px;
+  }
+}
+
+
+  
+
+
+@media all and (min-width: 992px){
+  .imgProductosCarousel{
+      height: 550px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*! --------------- MAIN - NOSOTROS --------------- */
 
 .titulos{
@@ -466,11 +811,101 @@ form button.btn:hover{
   text-decoration: underline;
 }
 
-/** ----- MEDIDAS RESPONSIVE ----- */
+/** ---------- Medidas responsive ---------- */
 
 @media all and (max-width: 768px){
   .main-registro .card-body{
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+
+
+
+
+/*! --------------- CONTACTO --------------- */
+iframe{
+  height: 300px;
+}
+
+.formas-de-contacto{
+  background: hsl(222, 43%, 25%);
+}
+
+.formulario{
+  background: #efefef;
+  color: #202020;
+}
+
+.formulario button{
+  width: 100%;
+}
+
+.circulo{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.list-unstyled a{
+  color: #fafafa;
+}
+
+.textarea-contacto{
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+
+
+/** ---------- Medidas responsive ---------- */
+@media screen and (max-width: 768px) {
+  iframe{
+    height: 200px;
+  }  
+}
+
+
+
+
+
+/*! --------------- DETALLES DE PRODUCTO --------------- */
+.form-select{
+  background-color: #efefef;
+}
+
+.progress{
+  height: 10px;
+}
+
+.fecha-comentario{
+  font-size: 12px;
+}
+
+
+
+
+
+/*! --------------- DETALLES DE CATEGORÍA --------------- */
+.categoria-boxeo{
+  padding-top: 20px;
+  position: relative;
+  height: 350px;
+}
+
+.categoria-boxeo img{
+
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.centrar-boton {
+display: flex;
+justify-content: center;
+align-items: center;
 }

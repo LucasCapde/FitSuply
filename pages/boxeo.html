@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ortega Antonella, Alani Camila, Capdevila Lucas" />
+  <meta name="description" content="Venta de insumos para gimnasio" />
+  <meta name="keywords" content="gym, yoga, barras, mancuernas, discos, colchonetas" />
+
+  <script src="https://kit.fontawesome.com/c7393ce70b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/android-chrome-512x512.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>FitSuply | Categoría</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-sin-fondo.png" alt="Logo FitSuply">
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-theme="dark"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuHamburguesa"
+        aria-controls="menuHamburguesa"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuHamburguesa">
+          <div class="contenedor-order">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="contacto.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="nosotros.html">¿Quiénes somos?</a>
+              </li>
+            </ul>
+
+            <!-- Buscador -->
+            <form class="d-flex mx-lg-4" role="search" >
+              <input
+              class="form-control"
+              type="search"
+              placeholder="Buscar productos..."
+              aria-label="Search">
+            </form>
+          </div>
+
+
+          <!-- Icono usuario (botón para activar modal) -->
+          <button
+          type="button"
+          class="btn-user"
+          data-bs-toggle="modal"
+          data-bs-target="#modalIngresar">
+            <i class="fa-regular fa-user fa-2x"></i>
+            <p>Ingresar</p>
+          </button>
+
+          <!-- Modal -->
+          <div
+          class="modal fade"
+          id="modalIngresar"
+          tabindex="-1"
+          aria-labelledby="modalIngresarLabel"
+          aria-hidden="true"
+          data-bs-theme="dark">
+            <div class="modal-dialog modal-xl">
+              <div class="d-flex border border-1">
+                <img class="img-fluid" src="../img/login-image.jpg" alt="Persona usando su celular">
+                <div class="modal-content px-3">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4 text-uppercase text-center" id="modalIngresarLabel">Ingresar</h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <hr class="mx-3 my-0"/>
+
+                  <div class="modal-body">
+
+
+                    <form class="row g-3" method="post">
+                      <div class="row-md-6">
+                        <label for="email" class="form-label fs-5">Nombre de usuario o correo<span>*</span></label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          minlength="5"
+                          maxlength="254"
+                          required
+                          placeholder="usuario@ejemplo.com">
+                      </div>
+
+                      <div class="row-md-6">
+                        <label for="password" class="form-label fs-5">Contraseña<span>*</span></label>
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          minlength="7"
+                          maxlength="25"
+                          required
+                          placeholder="Ingrese su contraseña">
+                      </div>
+
+                      <div class="form-check mt-1 fs-6 p-0">
+                        <input class="form-check-input mx-2" type="checkbox" id="inputSesion" checked>
+                        <label class="form-check-label pt-1" for="inputSesion">Mantener la sesión abierta.</label>
+                      </div>
+
+                      <div class="col-12 d-grid">
+                        <button type="submit" class="btn btn-modal text-uppercase fs-5 col-12">Ingresar</button>
+                        <a href="404.html" class="text-center mt-2 fs-6">¿Olvidaste tu contraseña?</a>
+                      </div>
+                    </form>
+                    <p class="text-center mt-5">O continúa con</p>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 my-3 btn-facebook"><i class="fa-brands fa-facebook-f me-3"></i> Facebook</a>
+                    <a href="404.html" class="btn btn-modal fs-5 col-12 btn-google"><i class="fa-brands fa-google fa-1x me-3"></i> Google</a>
+
+                  </div>
+                  <hr class="mx-3 my-0"/>
+
+                    <div class="modal-footer d-block border-top-0">
+                      <p class="text-center">
+                        <i class="fa-regular fa-user fa-4x"></i>
+                      </p>
+                      <p class="text-center mt-3">¿Aún no tienes cuenta?
+                        <a href="registro.html" class="text-uppercase">Crear una cuenta</a>
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Ícono favoritos -->
+          <a class="position-relative mx-lg-4 btn-favs " href="404.html">
+            <i class="fa-regular fa-heart fa-2x"></i>
+            <span class="nav-contador">0</span>
+            <p>Favoritos</p>
+          </a>
+
+          <!-- Ícono carrito -->
+          <a class="position-relative btn-carrito" href="carrito.html">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            <span class="nav-contador">0</span>
+            <p>Carrito</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class=" categoria-boxeo">
+       <img src="../img/Boxeo-Categoria.gif" alt="Categoria Boxeo">
+    </section>
+
+    <nav class="bg-transparent px-2"  aria-label="breadcrumb" >
+      <ol class="breadcrumb container mt-5">
+        <li class="breadcrumb-item"><a href="../index.html" class="link-light link-underline-opacity-0">Inicio</a></li>
+          <p><i class="fa-solid fa-chevron-right mx-2"></i></p>
+        <li class="breadcrumb-item active text-light" aria-current="page">Boxeo</li>
+      </ol>
+    </nav>
+
+    <!-- --------------FILTROS-------- -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 tittle-categoria">
+          <h5 class="text-light">Filtrar Por</h5>
+          <div class="form-group">
+            <select class="form-control" id="categoria">
+              <option>Mas vendidos</option>
+                <option>Mayor Precio</option>
+                <option>Menos Precio</option>
+                <option>Mayor relevancia</option>
+             
+            </select>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 tittle-categoria">
+          <div class="form-group mt-2">
+            <label for="precio">Precio</label>
+            <div class="d-flex justify-content-between align-items-center">
+               
+                <span id="rango-precio">$0</span>
+            
+                <span id="rango-precio">$90.000</span>
+            </div>
+            <input type="range" class="form-control-range w-100" id="precio" min="0" max="100">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 tittle-categoria centrar-boton">
+        <button type="submit" class="btn btn-dark text-light">Filtrar</button>
+      </div>
+    </section>
+
+   
+
+
+      <!-- ----------------PRODUCTOS------------- -->
+
+      <section class="container my-4">
+        <article class="row">
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p1.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Bolsa De Box
+                </h5>
+                <p class="card-text text-center card-precio">$ 12.500,00 – $ 25.000,00
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p2.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body ">
+                <h5 class="card-title">Cadenas Para Bolsa De Box X 4 Unidades De 35 Cm + 5 Mosquetones/h5>
+                <p class="card-text text-center card-precio">$ 18.100,00</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p10.webp"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Bolsa Boxeo Cobertura Vinilica Proyec 90 cm Fucsia
+                </h5>
+                <p class="card-text text-center card-precio">$ 26.958</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p11.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Bolsa De Boxeo Inflable De Aire De Pvc</h5>
+                <p class="card-text text-center card-precio">$ 19.500,00</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p3.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Guante De Box Mir 10 Oz Sintetico Con Velcro
+                </h5>
+                <p class="card-text text-center card-precio">$$ 26.200,00</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p4.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Guantes Mir Boxing
+                </h5>
+                <p class="card-text text-center card-precio">$ 32.800,00 – $ 35.100,00</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p5.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Guantin De Box Mir (Dama)
+                </h5>
+                <p class="card-text text-center card-precio">$ 18.100,00
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p6.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Cabezal Boxeo</h5>
+                <p class="card-text text-center card-precio">$ 28.000,00</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p7.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Perita Puching Ball
+                </h5>
+                <p class="card-text text-center card-precio">$ 25.700,00
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p8.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Cielo Tierra Mir + Tensores
+                </h5>
+                <p class="card-text text-center card-precio">$ 28.600,00</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p9.jpg"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    Guante De MMA Sparring – Sintetico Con Velcro
+                </h5>
+                <p class="card-text text-center card-precio">$ 20.800,00
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 my-4">
+            <div class="card h-100">
+              <img
+                src="../img/boxeo-p13.webp"
+                class="card-img-top"
+                alt="guante negro adulto"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                    BUCAL SONNOS STANDARD SIMPLE (FAB)
+                </h5>
+                <p class="card-text text-center card-precio">$ 1.461,17</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="./pages/error404.html" class="btn hvr-radial-out w-100"
+                  >Comprar</a
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <nav class="bg-transparent" aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </main>
+
+  <footer class="text-light py-3">
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-md-12 col-lg-3 mt-3 text-center text-lg-start">
+          <img src="../img/logo-sin-fondo.png" alt="Logo FitSuply" class="img-fluid logo-footer">
+        </div>
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Información</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled">
+            <li
+              ><a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Política de privacidad</a>
+            </li>
+
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Términos y condiciones</a>
+            </li>
+
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Políticas de devolución</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Mapa</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled">
+            <li
+              ><a href="nosotros.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Nosotros</a>
+            </li>
+
+            <li class="my-3">
+              <a href="contacto.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Contacto</a>
+            </li>
+
+            <li class="my-3">
+              <a href="404.html"
+              class="link-light link-offset-2 link-underline link-underline-opacity-0 hvr-underline-from-left">Productos destacados</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mt-3">
+          <h5 class="text-uppercase">Seguinos en las redes</h5>
+          <hr class="mb-4" />
+          <ul class="list-unstyled d-flex justify-content-between justify-content-lg-start">
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-instagram fs-2"></i>
+              </a>
+            </li>
+
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-facebook fs-2"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-brands fa-x-twitter fs-2"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="404.html">
+                <i class="fa-regular fa-envelope fs-2"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <hr class="my-4" />
+        <div class="container">
+          <article class="row">
+            <div class="col-md-6 col-lg-6 text-center">
+              <h5 class="mb-4">Formas de pago</h5>
+              <img
+              src="../img/formasdepago01-footer.png"
+              alt="formas de pago"
+              class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6 col-lg-6 d-flex align-items-center justify-content-center mt-3">
+              <p>&copy;Todos los derechos reservados</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </footer>
