@@ -22,8 +22,6 @@ main{
   flex-grow: 1;
 }
 
-
-
 /* Colores de nav y footer */
 nav,
 footer{
@@ -34,9 +32,7 @@ footer{
 
 
 
-
 /*! --------------- NAVBAR --------------- */
-
 .navbar-nav a{
   font-family: 'Roboto', sans-serif;
   color: #fafafa;
@@ -75,7 +71,6 @@ footer{
   right: 0;
 }
 
-
 .navbar-toggler{
   color: #efefef;
 }
@@ -91,7 +86,7 @@ footer{
 .contenedor-order .form-control::placeholder{
   color: #333333;
   padding-left: 20px;
-  background-image: linear-gradient(rgba(255, 255, 255, .5) , rgba(255, 255, 255, .5) ), url(../img/magnifying-glass-solid.svg);
+  background-image: linear-gradient(rgba(255, 255, 255, .5) , rgba(255, 255, 255, .5) ), url(../img/icons/magnifying-glass-solid.svg);
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: left center;
@@ -142,7 +137,6 @@ form span{
   color: red;
 }
 
-
 #inputSesion{
   border: none;
   width: 25px;
@@ -160,27 +154,6 @@ form button.btn:hover{
   color: #fafafa;
 }
 
-.modal-body p{
-  position: relative;
-}
-
-.modal-body p::before{
-  content: "";
-  border: .1px solid rgba(255, 255, 255, 0.15);
-  position: absolute;
-  width: 40%;
-  top: 10px;
-  right: 0px;
-}
-
-.modal-body p::after{
-  content: "";
-  border: .1px solid rgba(255, 255, 255, 0.15);
-  position: absolute;
-  width: 40%;
-  top: 10px;
-  left: 0px;
-}
 /* Cambia colores de botones de Facebook y Google */
 
 .btn-facebook{
@@ -213,6 +186,7 @@ form button.btn:hover{
 }
 
 /* ----- Ajusto a posición la cantidad de productos likeados/encarrito ----- */
+
 .nav-contador{
   display: inline-block;
   background: #fafafa;
@@ -230,7 +204,7 @@ form button.btn:hover{
 
 
 
-/** ---------- Medidas responsive ---------- */
+/** ---------- Medidas responsive navbar ---------- */
 @media all and (max-width: 768px){
   .navbar-brand{
     width: 25%;
@@ -318,63 +292,23 @@ form button.btn:hover{
 
 
 
+/*! --------------- FOOTER --------------- */
+.logo-footer{
+  width: 70%;
+}
+
+/** ---------- Medidas responsive footer ---------- */
+@media all and (max-width: 768px){
+  .logo-footer{
+    width: 40%;
+  }
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*!--------------- PAGINA PRINCIPAL ---------------*/
+/*!--------------- PÁGINA PRINCIPAL ---------------*/
 .imgProductosCarousel{
   height: 450px;
   object-fit: cover;
@@ -391,21 +325,22 @@ form button.btn:hover{
   font-family: 'Martian Mono', monospace;
 }
 
-
 /* CATEGORIAS DE LA PAGINA PRINCIPAL */
 
 .image-categorias {
   position:relative;
   
 }
+
 .image-categorias img {
   transition: opacity 0.4s;
   width: 100%;
-
 }
+
 .image-categorias:hover img {
   opacity: 0.4;
 }
+
 .title {
   color: white;
   position: absolute;
@@ -428,6 +363,7 @@ form button.btn:hover{
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
+
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(255, 247, 247, 0.853);
   -webkit-transform: scale(1.1);
@@ -449,6 +385,7 @@ form button.btn:hover{
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-radial-out:before {
   content: "";
   position: absolute;
@@ -468,17 +405,19 @@ form button.btn:hover{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
   color: rgb(6, 6, 6);
   text-decoration:underline;
 }
+
 .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
   -webkit-transform: scale(2);
   transform: scale(2);
 }
 
 
-/* Card de lso productos */
+/* Card de los productos */
 
 .card-precio{
   color: #f91e1e;
@@ -487,7 +426,7 @@ form button.btn:hover{
   margin-top: 15px;  
 }
 
-/* --------------------Hover de las card----------------- */
+/* -------------------- Hover de las card ----------------- */
 
 .card {
 position: relative;
@@ -514,7 +453,6 @@ transform: scale(1.1); /* Puedes ajustar el valor según tu preferencia */
   padding-top: 25px;
   background-color: #302f2fb5;
 }
-
 
 
 /* Estilos para las estrellas de valoración */
@@ -570,7 +508,6 @@ color: rgb(255, 255, 255); /* Color del texto */
 background-color: #f91e1eb1; /* Fondo semitransparente */
 padding: 10px 20px; /* Espaciado interno para el título */
 font-family: 'Martian Mono', monospace;
-
 }
 
 /* Estilos para el párrafo */
@@ -583,8 +520,10 @@ color: white; /* Color del texto */
 font-size: 35px;
 }
 
-@media (max-width: 1024px) {
 
+
+/** ---------- Medidas responsive página principal ---------- */
+@media (max-width: 1024px) {
   .contenedor-seccion-2{
     height: auto;
   }
@@ -597,16 +536,11 @@ font-size: 35px;
 @media (max-width: 768px) {
   .contenedor-seccion-2 {
     display: none; /* Oculta completamente la sección en dispositivos pequeños */
-  }
-  
+  }  
   .imgProductosCarousel{
       height: 150px;
   }
 }
-
-
-  
-
 
 @media all and (min-width: 992px){
   .imgProductosCarousel{
@@ -618,53 +552,7 @@ font-size: 35px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*! --------------- MAIN - NOSOTROS --------------- */
-
+/*! --------------- PÁGINA NOSOTROS --------------- */
 .titulos{
   color: #f91e1e;
   font-family: 'Martian Mono', monospace;
@@ -692,7 +580,6 @@ font-size: 35px;
   background-color: #f91e1eb1; /* Fondo semitransparente */
   padding: 10px 20px; /* Espaciado interno para el título */
   font-family: 'Martian Mono', monospace;
-
 }
 
 /* Estilos para el párrafo */
@@ -731,7 +618,7 @@ font-size: 35px;
 
 
 
-/** ---------- Medidas responsive ---------- */
+/** ---------- Medidas responsive página nosotros ---------- */
 @media all and (max-width: 768px) {
   .contenedor {
       height: auto;
@@ -747,9 +634,9 @@ font-size: 35px;
     top: 15%;
   }
   .contenedor p {
-      width: 100%;
-      font-size: 16px;
-      top: 30%;
+    width: 100%;
+    font-size: 16px;
+    top: 30%;
   }
 
   .imagen-integrante{
@@ -761,49 +648,11 @@ font-size: 35px;
 
 
 
-/*! --------------- FOOTER --------------- */
-.logo-footer{
-  width: 70%;
-}
-
-/** ---------- Medidas responsive ---------- */
-@media all and (max-width: 768px){
-  .logo-footer{
-    width: 40%;
-  }
-}
-
-
-
-
-
-/*! --------------- REGISTRO --------------- */
+/*! --------------- PÁGINA REGISTRO --------------- */
 .main-registro{
   background: linear-gradient(rgba(0, 0, 0, .75) , rgba(0, 0, 0, .75) ), url(../img/fondo-registro.jpg);
   background-size: cover;
   background-position: center center;
-}
-
-.parrafo-opciones{
-  position: relative;
-}
-
-.parrafo-opciones::before{
-  content: "";
-  border: .1px solid rgba(0, 0, 0, 0.15);
-  position: absolute;
-  width: 40%;
-  top: 10px;
-  right: 0px;
-}
-
-.parrafo-opciones::after{
-  content: "";
-  border: .1px solid rgba(0, 0, 0, 0.15);
-  position: absolute;
-  width: 40%;
-  top: 10px;
-  left: 0px;
 }
 
 .registro-modal{
@@ -811,7 +660,7 @@ font-size: 35px;
   text-decoration: underline;
 }
 
-/** ---------- Medidas responsive ---------- */
+/** ---------- Medidas responsive página registro ---------- */
 
 @media all and (max-width: 768px){
   .main-registro .card-body{
@@ -824,7 +673,7 @@ font-size: 35px;
 
 
 
-/*! --------------- CONTACTO --------------- */
+/*! --------------- PÁGINA CONTACTO --------------- */
 iframe{
   height: 300px;
 }
@@ -860,7 +709,7 @@ iframe{
 
 
 
-/** ---------- Medidas responsive ---------- */
+/** ---------- Medidas responsive página contacto ---------- */
 @media screen and (max-width: 768px) {
   iframe{
     height: 200px;
@@ -871,7 +720,7 @@ iframe{
 
 
 
-/*! --------------- DETALLES DE PRODUCTO --------------- */
+/*! --------------- PÁGINA DETALLES DE PRODUCTO --------------- */
 .form-select{
   background-color: #efefef;
 }
@@ -884,11 +733,15 @@ iframe{
   font-size: 12px;
 }
 
+.grilla-productos .link-light:hover{
+  color: #202020 !important;
+}
 
 
 
 
-/*! --------------- DETALLES DE CATEGORÍA --------------- */
+
+/*! --------------- PÁGINA DETALLES DE CATEGORÍA --------------- */
 .categoria-boxeo{
   padding-top: 20px;
   position: relative;
@@ -908,4 +761,20 @@ iframe{
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+
+
+
+
+/*! --------------- CARRITO --------------- */
+.input-quantity{
+  padding: 5px;
+  width: 60px;
+  height: 100%;
+}
+
+.figure-img{
+  width: 50%;
+  height: 10%;
 }
